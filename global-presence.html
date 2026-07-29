@@ -1,367 +1,678 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Global Presence | KYLAUD GLOBAL</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Theme Configuration -->
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Global Presence | KYLAUD GLOBAL</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            "colors": {
-                    "surface-container-highest": "#e1e3e0",
-                    "on-tertiary-fixed": "#111c2d",
-                    "secondary-fixed-dim": "#e9c349",
-                    "on-primary-fixed-variant": "#3a4859",
-                    "surface-tint": "#525f71",
-                    "on-tertiary-fixed-variant": "#3d475a",
-                    "tertiary-fixed": "#d9e3fb",
-                    "on-secondary-container": "#745c00",
-                    "surface-container-low": "#f2f4f1",
-                    "background": "#f8faf7",
-                    "on-primary-fixed": "#0f1c2c",
-                    "outline-variant": "#c4c6cc",
-                    "primary-fixed": "#d6e4f9",
-                    "inverse-surface": "#2e312f",
-                    "tertiary-container": "#111c2d",
-                    "on-surface-variant": "#44474c",
-                    "inverse-on-surface": "#eff1ee",
-                    "outline": "#74777d",
-                    "on-background": "#191c1b",
-                    "on-secondary-fixed": "#241a00",
-                    "surface-container": "#eceeeb",
-                    "tertiary-fixed-dim": "#bdc7de",
-                    "primary-fixed-dim": "#bac8dc",
-                    "on-surface": "#191c1b",
-                    "inverse-primary": "#bac8dc",
-                    "tertiary": "#000000",
-                    "secondary-container": "#fed65b",
-                    "on-tertiary": "#ffffff",
-                    "secondary-fixed": "#ffe088",
-                    "surface-container-lowest": "#ffffff",
-                    "error": "#ba1a1a",
-                    "surface-container-high": "#e7e9e6",
-                    "primary": "#000000",
-                    "surface-variant": "#e1e3e0",
-                    "primary-container": "#0f1c2c",
-                    "on-error": "#ffffff",
-                    "on-error-container": "#93000a",
-                    "on-primary": "#ffffff",
-                    "error-container": "#ffdad6",
-                    "on-secondary-fixed-variant": "#574500",
-                    "on-primary-container": "#778598",
-                    "secondary": "#735c00",
-                    "surface-bright": "#f8faf7",
-                    "surface-dim": "#d8dbd8",
-                    "on-tertiary-container": "#7a849a",
-                    "surface": "#f8faf7",
-                    "on-secondary": "#ffffff"
+            colors: {
+              "surface-container-highest": "#e1e3e0",
+              "on-tertiary-fixed": "#111c2d",
+              "secondary-fixed-dim": "#e9c349",
+              "on-primary-fixed-variant": "#3a4859",
+              "surface-tint": "#525f71",
+              "on-tertiary-fixed-variant": "#3d475a",
+              "tertiary-fixed": "#d9e3fb",
+              "on-secondary-container": "#745c00",
+              "surface-container-low": "#f2f4f1",
+              background: "#f8faf7",
+              "on-primary-fixed": "#0f1c2c",
+              "outline-variant": "#c4c6cc",
+              "primary-fixed": "#d6e4f9",
+              "inverse-surface": "#2e312f",
+              "tertiary-container": "#111c2d",
+              "on-surface-variant": "#44474c",
+              "inverse-on-surface": "#eff1ee",
+              outline: "#74777d",
+              "on-background": "#191c1b",
+              "on-secondary-fixed": "#241a00",
+              "surface-container": "#eceeeb",
+              "tertiary-fixed-dim": "#bdc7de",
+              "primary-fixed-dim": "#bac8dc",
+              "on-surface": "#191c1b",
+              "inverse-primary": "#bac8dc",
+              tertiary: "#000000",
+              "secondary-container": "#fed65b",
+              "on-tertiary": "#ffffff",
+              "secondary-fixed": "#ffe088",
+              "surface-container-lowest": "#ffffff",
+              error: "#ba1a1a",
+              "surface-container-high": "#e7e9e6",
+              primary: "#000000",
+              "surface-variant": "#e1e3e0",
+              "primary-container": "#0f1c2c",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed-variant": "#574500",
+              "on-primary-container": "#778598",
+              secondary: "#735c00",
+              "surface-bright": "#f8faf7",
+              "surface-dim": "#d8dbd8",
+              "on-tertiary-container": "#7a849a",
+              surface: "#f8faf7",
+              "on-secondary": "#ffffff",
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
             },
-            "spacing": {
-                    "base": "8px",
-                    "container-max": "1280px",
-                    "margin-desktop": "64px",
-                    "gutter": "24px",
-                    "section-padding": "120px",
-                    "margin-mobile": "16px"
+            spacing: {
+              base: "8px",
+              "container-max": "1280px",
+              "margin-desktop": "64px",
+              gutter: "24px",
+              "section-padding": "120px",
+              "margin-mobile": "16px",
             },
-            "fontFamily": {
-                    "body-md": ["Montserrat"],
-                    "headline-md": ["Montserrat"],
-                    "label-md": ["Montserrat"],
-                    "headline-lg-mobile": ["Montserrat"],
-                    "body-lg": ["Montserrat"],
-                    "display-lg": ["Montserrat"],
-                    "headline-lg": ["Montserrat"]
+            fontFamily: {
+              "body-md": ["Montserrat"],
+              "headline-md": ["Montserrat"],
+              "label-md": ["Montserrat"],
+              "headline-lg-mobile": ["Montserrat"],
+              "body-lg": ["Montserrat"],
+              "display-lg": ["Montserrat"],
+              "headline-lg": ["Montserrat"],
             },
-            "fontSize": {
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
-            }
+            fontSize: {
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "headline-md": [
+                "24px",
+                { lineHeight: "32px", fontWeight: "600" },
+              ],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.1em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-lg-mobile": [
+                "32px",
+                { lineHeight: "40px", fontWeight: "700" },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "display-lg": [
+                "64px",
+                {
+                  lineHeight: "72px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+            },
           },
         },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
       }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .gold-border-accent { border-bottom: 2px solid #e9c349; }
-        .card-hover:hover { border-color: #000000; }
-        .map-pin { transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .map-pin:hover { transform: scale(1.2); cursor: pointer; }
+      .gold-border-accent {
+        border-bottom: 2px solid #e9c349;
+      }
+      .card-hover:hover {
+        border-color: #000000;
+      }
+      .map-pin {
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .map-pin:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
     </style>
-</head>
-<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
-<!-- TopNavBar -->
-<nav class="bg-surface-container-lowest fixed top-0 w-full z-50 border-b border-outline/20 shadow-sm">
-<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
-<div class="font-headline-md text-headline-md font-bold text-primary tracking-tight">KYLAUD GLOBAL</div>
-<!-- Desktop Nav -->
-<div class="hidden md:flex items-center gap-gutter">
-<a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="home.html">Home</a>
-<a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="portifolio.html">Portfolio</a>
-<a class="font-label-md text-label-md uppercase text-primary border-b-2 border-secondary-container pb-1 transition-colors duration-300" href="global-presence.html">Global Presence</a>
-<a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="about.html">About</a>
-<a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase rounded shadow-sm hover:opacity-90 transition-opacity">
-                Get Started
-            </button>
-</div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative h-[716px] flex items-center justify-center overflow-hidden">
-
-<div class="relative z-10 text-center px-margin-mobile max-w-4xl">
-<span class="font-label-md text-label-md uppercase text-secondary tracking-widest block mb-4">A Network of Influence</span>
-<h1 class="font-display-lg text-display-lg mb-6">Connecting Markets, Empowering Growth.</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-                    Kylaud Global Group operates at the intersection of emerging opportunities and established markets, orchestrating large-scale capital deployment across five continents.
-                </p>
-</div>
-</section>
-<!-- Interactive Map Section -->
-<section class="py-section-padding px-margin-desktop max-w-container-max mx-auto">
-<div class="grid lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-5 space-y-8">
-<h2 class="font-headline-lg text-headline-lg">Strategic Target Markets</h2>
-<p class="text-on-surface-variant font-body-md">
-                        Our regional hubs are strategically positioned to provide on-the-ground expertise and seamless integration within local economies.
-                    </p>
-<div class="space-y-4">
-<!-- Region Items -->
-<div class="p-6 border border-outline/20 bg-surface-container-lowest group cursor-pointer transition-all hover:bg-surface-container-low">
-<div class="flex justify-between items-center">
-<h3 class="font-headline-md text-headline-md">North America</h3>
-<span class="material-symbols-outlined text-secondary">arrow_forward_ios</span>
-</div>
-<div class="mt-4 border-t border-outline/10 pt-4 hidden group-hover:block transition-all">
-<p class="text-body-md text-on-surface-variant">Focus: Advanced Technology, FinTech, and Renewable Energy Infrastructure.</p>
-</div>
-</div>
-<div class="p-6 border border-outline/20 bg-surface-container-lowest group cursor-pointer transition-all hover:bg-surface-container-low">
-<div class="flex justify-between items-center">
-<h3 class="font-headline-md text-headline-md">Europe</h3>
-<span class="material-symbols-outlined text-secondary">arrow_forward_ios</span>
-</div>
-<div class="mt-4 border-t border-outline/10 pt-4 hidden group-hover:block transition-all">
-<p class="text-body-md text-on-surface-variant">Focus: ESG Compliance, Sustainable Real Estate, and Media Innovation.</p>
-</div>
-</div>
-<div class="p-6 border border-outline/20 bg-surface-container-lowest group cursor-pointer transition-all hover:bg-surface-container-low">
-<div class="flex justify-between items-center">
-<h3 class="font-headline-md text-headline-md">Asia</h3>
-<span class="material-symbols-outlined text-secondary">arrow_forward_ios</span>
-</div>
-<div class="mt-4 border-t border-outline/10 pt-4 hidden group-hover:block transition-all">
-<p class="text-body-md text-on-surface-variant">Focus: Smart City Development, Logistics, and Education Tech.</p>
-</div>
-</div>
-<div class="p-6 border border-outline/20 bg-surface-container-lowest group cursor-pointer transition-all hover:bg-surface-container-low">
-<div class="flex justify-between items-center">
-<h3 class="font-headline-md text-headline-md">Africa</h3>
-<span class="material-symbols-outlined text-secondary">arrow_forward_ios</span>
-</div>
-<div class="mt-4 border-t border-outline/10 pt-4 hidden group-hover:block transition-all">
-<p class="text-body-md text-on-surface-variant">Focus: Agricultural Technology, Renewable Energy, and Infrastructure Development in Uganda and East Africa.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="lg:col-span-7 relative">
-<div class="aspect-square bg-surface-container-high relative overflow-hidden flex items-center justify-center">
-<!-- Abstract World Map Visual -->
-<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px]"></div>
-<img class="w-full h-full object-contain p-12" data-alt="A stylized, architectural monochromatic world map with glowing pinpoints in North America, Europe, Africa, Middle East, and Asia. The aesthetic is clean, corporate, and minimalist with sharp lines and high-contrast navy and white tones. High-fidelity digital rendering showing global connectivity through subtle light paths." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0hbHvrYHmDEntDlb0N9EK2A1NX2-o8yKyOZGFkDQ_Appw7alNGxaid9OEYO3FdFagUtXWgHYdsLUe6W7o-iEFkLhif8w6dfQp05nJ4arqEEFMuaL78iS26EaWZdWJJ4SDuyZEhVx9omXl9eJvoJVVM8IQUq7fODIz6KnEdaUFF8CiNn4Whhzz77zSMw6f4ewmJSE-GjpesAvU7XK9mA4JsEjD3wlf5SEfuGi8TRFMzNLYs5V6-CN8YGwPjo_0hzwXh8yC7PPw21A"/>
-<!-- Floating Pins - Descriptive Only for Layout -->
-<div class="absolute top-1/4 left-1/4 map-pin">
-<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-<div class="absolute top-1/3 left-1/2 map-pin">
-<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-<div class="absolute bottom-1/3 right-1/4 map-pin">
-<span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Key Sectors Bento Grid -->
-<section class="bg-primary-container py-section-padding">
-<div class="px-margin-desktop max-w-container-max mx-auto">
-<div class="mb-16">
-<span class="font-label-md text-label-md uppercase text-on-primary-container tracking-widest block mb-2">Diversified Portfolio</span>
-<h2 class="font-headline-lg text-headline-lg text-on-tertiary">Strategic Sectors</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- Sector Card 1: Technology -->
-<div class="relative group overflow-hidden h-80 flex flex-col justify-end p-8 bg-surface-container-lowest">
-<div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-60 z-10"></div>
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of high-tech circuit boards with glowing blue data streams, representing global technology and innovation. Professional macro photography, sharp focus, corporate aesthetic with a sense of speed and progress." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWxDnxjIMbx8g4LryFKRqic5KYkYp5Qh5GpspzOG8LL8vTDvVcWwjF7Dw1KGs7b8lwyeniVKl0YzqEo0UbQDGzNP27b-gCmp08q7VKG6nNq6ow5maKHraumD5Kee0j2jjKNJv3nqBdxbhRQilL2r1GQ50EUP-K5FpTQ-fzpCBebQAfdcZEXMcgnzv5zs3ziEULEyRDbIfA8XN7o90xlLTsWI9QLhjZLGT4hPg8ubVlZoSYyvvbPIwdZYoJHOYaPax9554oxQpjZ7U"/>
-</div>
-<div class="relative z-20">
-<span class="font-label-md text-label-md uppercase text-secondary-fixed block mb-2">Technology</span>
-<h4 class="font-headline-md text-headline-md text-on-tertiary">AI &amp; Connectivity</h4>
-</div>
-</div>
-<!-- Sector Card 2: Finance -->
-<div class="relative group overflow-hidden h-80 flex flex-col justify-end p-8 bg-surface-container-lowest">
-<div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-60 z-10"></div>
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist abstract financial charts and data visualizations displayed on a high-end glass interface. Deep navy and gold tones, reflecting institutional investment and wealth management. Sharp focus, clean geometric lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNLYpW8ihNJU9TM5mCtC4i4BA23Jxbs4tgIXgS1OYCKGmq7n8Le2C_vUCmDBVW4WCnQ_mrVIXxZ9X_B1y6ImURtiobBkLNAAlDNsM-CZl1_DjLhV_z_TvTAcMB6Ah1fjfM4gFd11UWsJ6PpLC1xy_QXSJC9FbaX70fMRCYQ-rwTQ0AUqL6XEULEDwFOrv4e7Tx6x72FpoEvTtPY6j95luuBHBMCoyKbLdi8UAJU-3Pzuyh1VZWVjd4djtv_Ivt59sFshyk_pOK9vE"/>
-</div>
-<div class="relative z-20">
-<span class="font-label-md text-label-md uppercase text-secondary-fixed block mb-2">Finance</span>
-<h4 class="font-headline-md text-headline-md text-on-tertiary">Capital Markets</h4>
-</div>
-</div>
-<!-- Sector Card 3: Real Estate -->
-<div class="relative group overflow-hidden h-80 flex flex-col justify-end p-8 bg-surface-container-lowest lg:col-span-2">
-<div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-60 z-10"></div>
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A panoramic view of a modern skyline at dusk, featuring high-rise sustainable glass skyscrapers. Architectural precision, luxury real estate development, soft atmospheric lighting in shades of navy and amber." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAluTzScqEaVRt9wWiX_JCUmXBJuvdAxCt51-PYzXzM_d6SXhdcZ9otCcn324XijB0eMFLFuA7xnWRpCoW0xnhJpwPYi3QsMM0hEEoNuNPxj51olqFmhY3WHlqH0ux26t7fY0Qsp7J4DOR1-0ObzhSp63SsZM3ATEptp-mO67KnAfpHstxju9W_9FL3gi-L22339suCcql9F5ZwFtzfgWwqeaBL4iS-_5ICD4XLL9nmvvsd5VSZmFB6cBPicMQIcYvK-FarIIZzXiA"/>
-</div>
-<div class="relative z-20">
-<span class="font-label-md text-label-md uppercase text-secondary-fixed block mb-2">Real Estate</span>
-<h4 class="font-headline-md text-headline-md text-on-tertiary">Metropolitan Development</h4>
-</div>
-</div>
-<!-- Sector Card 4: Energy -->
-<div class="p-8 bg-surface-container-lowest border-t-4 border-secondary-fixed flex flex-col justify-between">
-<div>
-<span class="material-symbols-outlined text-4xl text-primary mb-4">bolt</span>
-<h4 class="font-headline-md text-headline-md mb-2">Energy</h4>
-<p class="text-body-md text-on-surface-variant">Transitioning the global grid toward sustainable renewable infrastructure.</p>
-</div>
-<a class="font-label-md text-label-md uppercase text-primary font-bold flex items-center gap-2 group" href="#">
-                            Explore <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
-</a>
-</div>
-<!-- Sector Card 5: Healthcare -->
-<div class="p-8 bg-surface-container-lowest border-t-4 border-secondary-fixed flex flex-col justify-between">
-<div>
-<span class="material-symbols-outlined text-4xl text-primary mb-4">health_and_safety</span>
-<h4 class="font-headline-md text-headline-md mb-2">Healthcare</h4>
-<p class="text-body-md text-on-surface-variant">Investing in next-gen biotech and global medical facility management.</p>
-</div>
-<a class="font-label-md text-label-md uppercase text-primary font-bold flex items-center gap-2 group" href="#">
-                            Explore <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
-</a>
-</div>
-<!-- Sector Card 6: Infrastructure -->
-<div class="p-8 bg-surface-container-lowest border-t-4 border-secondary-fixed flex flex-col justify-between">
-<div>
-<span class="material-symbols-outlined text-4xl text-primary mb-4">foundation</span>
-<h4 class="font-headline-md text-headline-md mb-2">Infrastructure</h4>
-<p class="text-body-md text-on-surface-variant">Building the foundational systems for 21st-century smart cities.</p>
-</div>
-<a class="font-label-md text-label-md uppercase text-primary font-bold flex items-center gap-2 group" href="#">
-                            Explore <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
-</a>
-</div>
-<!-- Sector Card 7: Education & Media -->
-<div class="p-8 bg-surface-container-lowest border-t-4 border-secondary-fixed flex flex-col justify-between">
-<div>
-<span class="material-symbols-outlined text-4xl text-primary mb-4">school</span>
-<h4 class="font-headline-md text-headline-md mb-2">Education &amp; Media</h4>
-<p class="text-body-md text-on-surface-variant">Digital learning platforms and global communication networks.</p>
-</div>
-<a class="font-label-md text-label-md uppercase text-primary font-bold flex items-center gap-2 group" href="#">
-                            Explore <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Global Compliance CTA -->
-<section class="py-section-padding">
-<div class="px-margin-desktop max-w-container-max mx-auto bg-surface-container-low p-12 lg:p-24 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 -translate-y-1/2 translate-x-1/2 rounded-full blur-3xl"></div>
-<div class="relative z-10 max-w-2xl">
-<h2 class="font-display-lg text-display-lg mb-8">Ready to expand your global reach?</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
-                        Join our network of institutional partners and leverage our global presence to drive sustainable value. Our compliance frameworks ensure seamless international transitions.
-                    </p>
-<div class="flex flex-wrap gap-gutter">
-<button class="bg-primary text-on-primary px-10 py-5 font-label-md text-label-md uppercase rounded shadow-sm hover:opacity-90 transition-all">
-                            Partner With Us
-                        </button>
-<button class="border-2 border-secondary text-secondary px-10 py-5 font-label-md text-label-md uppercase rounded hover:bg-secondary/5 transition-all">
-                            View Global Offices
-                        </button>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-on-primary-fixed dark:bg-on-primary-fixed w-full">
-<div class="flex flex-col md:flex-row justify-between items-start gap-gutter py-section-padding px-margin-desktop max-w-container-max mx-auto text-on-tertiary">
-<div class="space-y-6 max-w-sm">
-<div class="font-headline-md text-headline-md font-bold text-on-tertiary">KYLAUD GLOBAL</div>
-<p class="font-body-md text-on-tertiary-container">
-                    Pioneering international investments and strategic growth through architectural precision and visionary leadership.
-                </p>
-</div>
-<div class="grid grid-cols-2 gap-12">
-<div class="flex flex-col gap-4">
-<span class="font-label-md text-label-md uppercase text-secondary-fixed">Resources</span>
-<a class="font-body-md text-on-tertiary-container hover:text-secondary-fixed transition-all" href="#">Privacy Policy</a>
-<a class="font-body-md text-on-tertiary-container hover:text-secondary-fixed transition-all" href="#">Terms of Service</a>
-</div>
-<div class="flex flex-col gap-4">
-<span class="font-label-md text-label-md uppercase text-secondary-fixed">Compliance</span>
-<a class="font-body-md text-on-tertiary-container hover:text-secondary-fixed transition-all" href="#">Global Compliance</a>
-<a class="font-body-md text-on-tertiary-container hover:text-secondary-fixed transition-all" href="#">ESG Report</a>
-</div>
-</div>
-</div>
-<div class="border-t border-on-tertiary-container/10 px-margin-desktop max-w-container-max mx-auto py-8">
-<p class="font-body-md text-body-md text-on-tertiary-container opacity-60">
-                © 2024 Kylaud Global Group. All rights reserved.
+  </head>
+  <body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+    <!-- TopNavBar -->
+    <nav
+      class="bg-surface-container-lowest fixed top-0 w-full z-50 border-b border-outline/20 shadow-sm"
+    >
+      <div
+        class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto"
+      >
+        <div
+          class="font-headline-md text-headline-md font-bold text-primary tracking-tight"
+        >
+          KYLAUD GLOBAL
+        </div>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-gutter">
+          <a
+            class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300"
+            href="portifolio.html"
+            >Portfolio</a
+          >
+          <a
+            class="font-label-md text-label-md uppercase text-primary border-b-2 border-secondary-container pb-1 transition-colors duration-300"
+            href="global-presence.html"
+            >Global Presence</a
+          >
+          <a
+            class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300"
+            href="contact.html"
+            >Contact</a
+          >
+        </div>
+        <button
+          class="bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase rounded shadow-sm hover:opacity-90 transition-opacity"
+        >
+          Get Started
+        </button>
+      </div>
+    </nav>
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section
+        class="relative h-[716px] flex items-center justify-center overflow-hidden"
+      >
+        <div class="relative z-10 text-center px-margin-mobile max-w-4xl">
+          <span
+            class="font-label-md text-label-md uppercase text-secondary tracking-widest block mb-4"
+            >A Network of Influence</span
+          >
+          <h1 class="font-display-lg text-display-lg mb-6">
+            Connecting Markets, Empowering Growth.
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto"
+          >
+            Kylaud Global Group operates at the intersection of emerging
+            opportunities and established markets, orchestrating large-scale
+            capital deployment across five continents.
+          </p>
+        </div>
+      </section>
+      <!-- Interactive Map Section -->
+      <section
+        class="py-section-padding px-margin-desktop max-w-container-max mx-auto"
+      >
+        <div class="grid lg:grid-cols-12 gap-gutter items-center">
+          <div class="lg:col-span-5 space-y-8">
+            <h2 class="font-headline-lg text-headline-lg">
+              Strategic Target Markets
+            </h2>
+            <p class="text-on-surface-variant font-body-md">
+              Our regional hubs are strategically positioned to provide
+              on-the-ground expertise and seamless integration within local
+              economies.
             </p>
-</div>
-</footer>
-<script>
-        // Simple scroll interaction for header
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('py-2');
-                nav.classList.remove('py-0');
-            } else {
-                nav.classList.remove('py-2');
-                nav.classList.add('py-0');
-            }
-        });
+            <div class="space-y-4">
+              <!-- Region Items -->
+              <div
+                class="p-6 border border-outline/20 bg-surface-container-lowest group cursor-pointer transition-all hover:bg-surface-container-low"
+              >
+                <div class="flex justify-between items-center">
+                  <h3 class="font-headline-md text-headline-md">
+                    North America
+                  </h3>
+                  <span class="material-symbols-outlined text-secondary"
+                    >arrow_forward_ios</span
+                  >
+                </div>
+                <div
+                  class="mt-4 border-t border-outline/10 pt-4 hidden group-hover:block transition-all"
+                >
+                  <p class="text-body-md text-on-surface-variant">
+                    Focus: Advanced Technology, FinTech, and Renewable Energy
+                    Infrastructure.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="p-6 border border-outline/20 bg-surface-container-lowest group cursor-pointer transition-all hover:bg-surface-container-low"
+              >
+                <div class="flex justify-between items-center">
+                  <h3 class="font-headline-md text-headline-md">Europe</h3>
+                  <span class="material-symbols-outlined text-secondary"
+                    >arrow_forward_ios</span
+                  >
+                </div>
+                <div
+                  class="mt-4 border-t border-outline/10 pt-4 hidden group-hover:block transition-all"
+                >
+                  <p class="text-body-md text-on-surface-variant">
+                    Focus: ESG Compliance, Sustainable Real Estate, and Media
+                    Innovation.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="p-6 border border-outline/20 bg-surface-container-lowest group cursor-pointer transition-all hover:bg-surface-container-low"
+              >
+                <div class="flex justify-between items-center">
+                  <h3 class="font-headline-md text-headline-md">Asia</h3>
+                  <span class="material-symbols-outlined text-secondary"
+                    >arrow_forward_ios</span
+                  >
+                </div>
+                <div
+                  class="mt-4 border-t border-outline/10 pt-4 hidden group-hover:block transition-all"
+                >
+                  <p class="text-body-md text-on-surface-variant">
+                    Focus: Smart City Development, Logistics, and Education
+                    Tech.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="p-6 border border-outline/20 bg-surface-container-lowest group cursor-pointer transition-all hover:bg-surface-container-low"
+              >
+                <div class="flex justify-between items-center">
+                  <h3 class="font-headline-md text-headline-md">Africa</h3>
+                  <span class="material-symbols-outlined text-secondary"
+                    >arrow_forward_ios</span
+                  >
+                </div>
+                <div
+                  class="mt-4 border-t border-outline/10 pt-4 hidden group-hover:block transition-all"
+                >
+                  <p class="text-body-md text-on-surface-variant">
+                    Focus: Agricultural Technology, Renewable Energy, and
+                    Infrastructure Development in Uganda and East Africa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7 relative">
+            <div
+              class="aspect-square bg-surface-container-high relative overflow-hidden flex items-center justify-center"
+            >
+              <!-- Abstract World Map Visual -->
+              <div
+                class="absolute inset-0 opacity-10 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px]"
+              ></div>
+              <img
+                class="w-full h-full object-contain p-12"
+                data-alt="A stylized, architectural monochromatic world map with glowing pinpoints in North America, Europe, Africa, Middle East, and Asia. The aesthetic is clean, corporate, and minimalist with sharp lines and high-contrast navy and white tones. High-fidelity digital rendering showing global connectivity through subtle light paths."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0hbHvrYHmDEntDlb0N9EK2A1NX2-o8yKyOZGFkDQ_Appw7alNGxaid9OEYO3FdFagUtXWgHYdsLUe6W7o-iEFkLhif8w6dfQp05nJ4arqEEFMuaL78iS26EaWZdWJJ4SDuyZEhVx9omXl9eJvoJVVM8IQUq7fODIz6KnEdaUFF8CiNn4Whhzz77zSMw6f4ewmJSE-GjpesAvU7XK9mA4JsEjD3wlf5SEfuGi8TRFMzNLYs5V6-CN8YGwPjo_0hzwXh8yC7PPw21A"
+              />
+              <!-- Floating Pins - Descriptive Only for Layout -->
+              <div class="absolute top-1/4 left-1/4 map-pin">
+                <span
+                  class="material-symbols-outlined text-secondary text-4xl"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >location_on</span
+                >
+              </div>
+              <div class="absolute top-1/3 left-1/2 map-pin">
+                <span
+                  class="material-symbols-outlined text-secondary text-4xl"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >location_on</span
+                >
+              </div>
+              <div class="absolute bottom-1/3 right-1/4 map-pin">
+                <span
+                  class="material-symbols-outlined text-secondary text-4xl"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >location_on</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Key Sectors Bento Grid -->
+      <section class="bg-primary-container py-section-padding">
+        <div class="px-margin-desktop max-w-container-max mx-auto">
+          <div class="mb-16">
+            <span
+              class="font-label-md text-label-md uppercase text-on-primary-container tracking-widest block mb-2"
+              >Diversified Portfolio</span
+            >
+            <h2 class="font-headline-lg text-headline-lg text-on-tertiary">
+              Strategic Sectors
+            </h2>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"
+          >
+            <!-- Sector Card 1: Technology -->
+            <div
+              class="relative group overflow-hidden h-80 flex flex-col justify-end p-8 bg-surface-container-lowest"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-60 z-10"
+              ></div>
+              <div class="absolute inset-0 z-0">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Close-up of high-tech circuit boards with glowing blue data streams, representing global technology and innovation. Professional macro photography, sharp focus, corporate aesthetic with a sense of speed and progress."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWxDnxjIMbx8g4LryFKRqic5KYkYp5Qh5GpspzOG8LL8vTDvVcWwjF7Dw1KGs7b8lwyeniVKl0YzqEo0UbQDGzNP27b-gCmp08q7VKG6nNq6ow5maKHraumD5Kee0j2jjKNJv3nqBdxbhRQilL2r1GQ50EUP-K5FpTQ-fzpCBebQAfdcZEXMcgnzv5zs3ziEULEyRDbIfA8XN7o90xlLTsWI9QLhjZLGT4hPg8ubVlZoSYyvvbPIwdZYoJHOYaPax9554oxQpjZ7U"
+                />
+              </div>
+              <div class="relative z-20">
+                <span
+                  class="font-label-md text-label-md uppercase text-secondary-fixed block mb-2"
+                  >Technology</span
+                >
+                <h4 class="font-headline-md text-headline-md text-on-tertiary">
+                  AI &amp; Connectivity
+                </h4>
+              </div>
+            </div>
+            <!-- Sector Card 2: Finance -->
+            <div
+              class="relative group overflow-hidden h-80 flex flex-col justify-end p-8 bg-surface-container-lowest"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-60 z-10"
+              ></div>
+              <div class="absolute inset-0 z-0">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Minimalist abstract financial charts and data visualizations displayed on a high-end glass interface. Deep navy and gold tones, reflecting institutional investment and wealth management. Sharp focus, clean geometric lines."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNLYpW8ihNJU9TM5mCtC4i4BA23Jxbs4tgIXgS1OYCKGmq7n8Le2C_vUCmDBVW4WCnQ_mrVIXxZ9X_B1y6ImURtiobBkLNAAlDNsM-CZl1_DjLhV_z_TvTAcMB6Ah1fjfM4gFd11UWsJ6PpLC1xy_QXSJC9FbaX70fMRCYQ-rwTQ0AUqL6XEULEDwFOrv4e7Tx6x72FpoEvTtPY6j95luuBHBMCoyKbLdi8UAJU-3Pzuyh1VZWVjd4djtv_Ivt59sFshyk_pOK9vE"
+                />
+              </div>
+              <div class="relative z-20">
+                <span
+                  class="font-label-md text-label-md uppercase text-secondary-fixed block mb-2"
+                  >Finance</span
+                >
+                <h4 class="font-headline-md text-headline-md text-on-tertiary">
+                  Capital Markets
+                </h4>
+              </div>
+            </div>
+            <!-- Sector Card 3: Real Estate -->
+            <div
+              class="relative group overflow-hidden h-80 flex flex-col justify-end p-8 bg-surface-container-lowest lg:col-span-2"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-60 z-10"
+              ></div>
+              <div class="absolute inset-0 z-0">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="A panoramic view of a modern skyline at dusk, featuring high-rise sustainable glass skyscrapers. Architectural precision, luxury real estate development, soft atmospheric lighting in shades of navy and amber."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAluTzScqEaVRt9wWiX_JCUmXBJuvdAxCt51-PYzXzM_d6SXhdcZ9otCcn324XijB0eMFLFuA7xnWRpCoW0xnhJpwPYi3QsMM0hEEoNuNPxj51olqFmhY3WHlqH0ux26t7fY0Qsp7J4DOR1-0ObzhSp63SsZM3ATEptp-mO67KnAfpHstxju9W_9FL3gi-L22339suCcql9F5ZwFtzfgWwqeaBL4iS-_5ICD4XLL9nmvvsd5VSZmFB6cBPicMQIcYvK-FarIIZzXiA"
+                />
+              </div>
+              <div class="relative z-20">
+                <span
+                  class="font-label-md text-label-md uppercase text-secondary-fixed block mb-2"
+                  >Real Estate</span
+                >
+                <h4 class="font-headline-md text-headline-md text-on-tertiary">
+                  Metropolitan Development
+                </h4>
+              </div>
+            </div>
+            <!-- Sector Card 4: Energy -->
+            <div
+              class="p-8 bg-surface-container-lowest border-t-4 border-secondary-fixed flex flex-col justify-between"
+            >
+              <div>
+                <span
+                  class="material-symbols-outlined text-4xl text-primary mb-4"
+                  >bolt</span
+                >
+                <h4 class="font-headline-md text-headline-md mb-2">Energy</h4>
+                <p class="text-body-md text-on-surface-variant">
+                  Transitioning the global grid toward sustainable renewable
+                  infrastructure.
+                </p>
+              </div>
+              <a
+                class="font-label-md text-label-md uppercase text-primary font-bold flex items-center gap-2 group"
+                href="#"
+              >
+                Explore
+                <span
+                  class="material-symbols-outlined transition-transform group-hover:translate-x-2"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <!-- Sector Card 5: Healthcare -->
+            <div
+              class="p-8 bg-surface-container-lowest border-t-4 border-secondary-fixed flex flex-col justify-between"
+            >
+              <div>
+                <span
+                  class="material-symbols-outlined text-4xl text-primary mb-4"
+                  >health_and_safety</span
+                >
+                <h4 class="font-headline-md text-headline-md mb-2">
+                  Healthcare
+                </h4>
+                <p class="text-body-md text-on-surface-variant">
+                  Investing in next-gen biotech and global medical facility
+                  management.
+                </p>
+              </div>
+              <a
+                class="font-label-md text-label-md uppercase text-primary font-bold flex items-center gap-2 group"
+                href="#"
+              >
+                Explore
+                <span
+                  class="material-symbols-outlined transition-transform group-hover:translate-x-2"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <!-- Sector Card 6: Infrastructure -->
+            <div
+              class="p-8 bg-surface-container-lowest border-t-4 border-secondary-fixed flex flex-col justify-between"
+            >
+              <div>
+                <span
+                  class="material-symbols-outlined text-4xl text-primary mb-4"
+                  >foundation</span
+                >
+                <h4 class="font-headline-md text-headline-md mb-2">
+                  Infrastructure
+                </h4>
+                <p class="text-body-md text-on-surface-variant">
+                  Building the foundational systems for 21st-century smart
+                  cities.
+                </p>
+              </div>
+              <a
+                class="font-label-md text-label-md uppercase text-primary font-bold flex items-center gap-2 group"
+                href="#"
+              >
+                Explore
+                <span
+                  class="material-symbols-outlined transition-transform group-hover:translate-x-2"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+            <!-- Sector Card 7: Education & Media -->
+            <div
+              class="p-8 bg-surface-container-lowest border-t-4 border-secondary-fixed flex flex-col justify-between"
+            >
+              <div>
+                <span
+                  class="material-symbols-outlined text-4xl text-primary mb-4"
+                  >school</span
+                >
+                <h4 class="font-headline-md text-headline-md mb-2">
+                  Education &amp; Media
+                </h4>
+                <p class="text-body-md text-on-surface-variant">
+                  Digital learning platforms and global communication networks.
+                </p>
+              </div>
+              <a
+                class="font-label-md text-label-md uppercase text-primary font-bold flex items-center gap-2 group"
+                href="#"
+              >
+                Explore
+                <span
+                  class="material-symbols-outlined transition-transform group-hover:translate-x-2"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Global Compliance CTA -->
+      <section class="py-section-padding">
+        <div
+          class="px-margin-desktop max-w-container-max mx-auto bg-surface-container-low p-12 lg:p-24 relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 -translate-y-1/2 translate-x-1/2 rounded-full blur-3xl"
+          ></div>
+          <div class="relative z-10 max-w-2xl">
+            <h2 class="font-display-lg text-display-lg mb-8">
+              Ready to expand your global reach?
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+              Join our network of institutional partners and leverage our global
+              presence to drive sustainable value. Our compliance frameworks
+              ensure seamless international transitions.
+            </p>
+            <div class="flex flex-wrap gap-gutter">
+              <button
+                class="bg-primary text-on-primary px-10 py-5 font-label-md text-label-md uppercase rounded shadow-sm hover:opacity-90 transition-all"
+              >
+                Partner With Us
+              </button>
+              <button
+                class="border-2 border-secondary text-secondary px-10 py-5 font-label-md text-label-md uppercase rounded hover:bg-secondary/5 transition-all"
+              >
+                View Global Offices
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-on-primary-fixed dark:bg-on-primary-fixed w-full">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start gap-gutter py-section-padding px-margin-desktop max-w-container-max mx-auto text-on-tertiary"
+      >
+        <div class="space-y-6 max-w-sm">
+          <div
+            class="font-headline-md text-headline-md font-bold text-on-tertiary"
+          >
+            KYLAUD GLOBAL
+          </div>
+          <p class="font-body-md text-on-tertiary-container">
+            Pioneering international investments and strategic growth through
+            architectural precision and visionary leadership.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-12">
+          <div class="flex flex-col gap-4">
+            <span
+              class="font-label-md text-label-md uppercase text-secondary-fixed"
+              >Resources</span
+            >
+            <a
+              class="font-body-md text-on-tertiary-container hover:text-secondary-fixed transition-all"
+              href="#"
+              >Privacy Policy</a
+            >
+            <a
+              class="font-body-md text-on-tertiary-container hover:text-secondary-fixed transition-all"
+              href="#"
+              >Terms of Service</a
+            >
+          </div>
+          <div class="flex flex-col gap-4">
+            <span
+              class="font-label-md text-label-md uppercase text-secondary-fixed"
+              >Compliance</span
+            >
+            <a
+              class="font-body-md text-on-tertiary-container hover:text-secondary-fixed transition-all"
+              href="#"
+              >Global Compliance</a
+            >
+            <a
+              class="font-body-md text-on-tertiary-container hover:text-secondary-fixed transition-all"
+              href="#"
+              >ESG Report</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-on-tertiary-container/10 px-margin-desktop max-w-container-max mx-auto py-8"
+      >
+        <p
+          class="font-body-md text-body-md text-on-tertiary-container opacity-60"
+        >
+          © 2024 Kylaud Global Group. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      // Simple scroll interaction for header
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 50) {
+          nav.classList.add("py-2");
+          nav.classList.remove("py-0");
+        } else {
+          nav.classList.remove("py-2");
+          nav.classList.add("py-0");
+        }
+      });
 
-        // Hover effect for regions to simulate map highlights
-        const regions = document.querySelectorAll('.group');
-        regions.forEach((region, index) => {
-            region.addEventListener('mouseenter', () => {
-                // Future enhancement: Trigger map pinpoint pulses
-            });
+      // Hover effect for regions to simulate map highlights
+      const regions = document.querySelectorAll(".group");
+      regions.forEach((region, index) => {
+        region.addEventListener("mouseenter", () => {
+          // Future enhancement: Trigger map pinpoint pulses
         });
+      });
     </script>
-</body></html>
+  </body>
+</html>
