@@ -535,6 +535,59 @@ img {
   color: var(--muted);
 }
 
+.about-image .card-note {
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* Icon system (inline SVG, sized/colored per container) */
+.icon {
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-icon .icon,
+.principle-icon .icon,
+.contact-highlight .icon svg,
+.office-card .icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.point .icon {
+  width: 13px;
+  height: 13px;
+  display: inline;
+  vertical-align: -2px;
+  margin-right: 3px;
+}
+
+.ecosystem-node .icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto 4px;
+}
+
+.map-pin .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-socials .icon {
+  width: 15px;
+  height: 15px;
+}
+
 /* Stat band */
 .stats {
   background: var(--navy);
@@ -576,6 +629,16 @@ img {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #a9bad3;
+}
+
+.stats-note {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 11px;
+  letter-spacing: .3px;
+  color: #7c8fa8;
 }
 
 /* Services / card grid (reused for portfolio, sectors, core values) */
