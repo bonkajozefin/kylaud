@@ -1,582 +1,392 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kylaud Global Group — an institutional business group building technology, infrastructure, fintech and energy ventures across the world." />
+  <title>Kylaud Global Group | Building. Connecting. Empowering.</title>
 
-<html class="scroll-smooth" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Kylaud Global Group | Building. Connecting. Empowering.</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface-container-highest": "#e1e3e0",
-              "on-tertiary-fixed": "#111c2d",
-              "secondary-fixed-dim": "#e9c349",
-              "on-primary-fixed-variant": "#3a4859",
-              "surface-tint": "#525f71",
-              "on-tertiary-fixed-variant": "#3d475a",
-              "tertiary-fixed": "#d9e3fb",
-              "on-secondary-container": "#745c00",
-              "surface-container-low": "#f2f4f1",
-              background: "#f8faf7",
-              "on-primary-fixed": "#0f1c2c",
-              "outline-variant": "#c4c6cc",
-              "primary-fixed": "#d6e4f9",
-              "inverse-surface": "#2e312f",
-              "tertiary-container": "#111c2d",
-              "on-surface-variant": "#44474c",
-              "inverse-on-surface": "#eff1ee",
-              outline: "#74777d",
-              "on-background": "#191c1b",
-              "on-secondary-fixed": "#241a00",
-              "surface-container": "#eceeeb",
-              "tertiary-fixed-dim": "#bdc7de",
-              "primary-fixed-dim": "#bac8dc",
-              "on-surface": "#191c1b",
-              "inverse-primary": "#bac8dc",
-              tertiary: "#000000",
-              "secondary-container": "#fed65b",
-              "on-tertiary": "#ffffff",
-              "secondary-fixed": "#ffe088",
-              "surface-container-lowest": "#ffffff",
-              error: "#ba1a1a",
-              "surface-container-high": "#e7e9e6",
-              primary: "#000000",
-              "surface-variant": "#e1e3e0",
-              "primary-container": "#0f1c2c",
-              "on-error": "#ffffff",
-              "on-error-container": "#93000a",
-              "on-primary": "#ffffff",
-              "error-container": "#ffdad6",
-              "on-secondary-fixed-variant": "#574500",
-              "on-primary-container": "#778598",
-              secondary: "#735c00",
-              "surface-bright": "#f8faf7",
-              "surface-dim": "#d8dbd8",
-              "on-tertiary-container": "#7a849a",
-              surface: "#f8faf7",
-              "on-secondary": "#ffffff",
-            },
-            borderRadius: {
-              DEFAULT: "0.125rem",
-              lg: "0.25rem",
-              xl: "0.5rem",
-              full: "0.75rem",
-            },
-            spacing: {
-              base: "8px",
-              "container-max": "1280px",
-              "margin-desktop": "64px",
-              gutter: "24px",
-              "section-padding": "120px",
-              "margin-mobile": "16px",
-            },
-            fontFamily: {
-              "body-md": ["Montserrat"],
-              "headline-md": ["Montserrat"],
-              "label-md": ["Montserrat"],
-              "headline-lg-mobile": ["Montserrat"],
-              "body-lg": ["Montserrat"],
-              "display-lg": ["Montserrat"],
-              "headline-lg": ["Montserrat"],
-            },
-            fontSize: {
-              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
-              "headline-md": [
-                "24px",
-                { lineHeight: "32px", fontWeight: "600" },
-              ],
-              "label-md": [
-                "14px",
-                {
-                  lineHeight: "20px",
-                  letterSpacing: "0.1em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-lg-mobile": [
-                "32px",
-                { lineHeight: "40px", fontWeight: "700" },
-              ],
-              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
-              "display-lg": [
-                "64px",
-                {
-                  lineHeight: "72px",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "700",
-                },
-              ],
-              "headline-lg": [
-                "40px",
-                {
-                  lineHeight: "48px",
-                  letterSpacing: "-0.01em",
-                  fontWeight: "700",
-                },
-              ],
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          "FILL" 0,
-          "wght" 400,
-          "GRAD" 0,
-          "opsz" 24;
-      }
-      .gold-accent-border {
-        border-bottom: 2px solid #fed65b;
-      }
-      .navy-bg {
-        background-color: #0f1c2c;
-      }
-      .gold-text {
-        color: #fed65b;
-      }
-      .card-hover:hover {
-        border-color: #0f1c2c;
-        transition: all 0.3s ease;
-      }
-      .Hero {
-        height: 100vh;
-        background-image: url("images/kylaud.png");
-        background-size: cover;
-        background-position: center;
-      }
-    </style>
-  </head>
-  <body class="bg-background text-on-surface font-body-md overflow-x-hidden">
-    <!-- TopNavBar -->
-    <header
-      class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline/20 shadow-sm"
-    >
-      <nav
-        class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto"
-      >
-        <div
-          class="font-headline-md text-headline-md font-bold text-primary tracking-tight"
-        >
-          KYLAUD
-        </div>
-        <div class="hidden md:flex items-center gap-8">
-          <a
-            class="font-label-md text-label-md uppercase text-primary border-b-2 border-secondary-container pb-1 transition-colors duration-300"
-            href="index.html"
-            >Home</a
-          >
-          <a
-            class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300"
-            href="portifolio.html"
-            >Portfolio</a
-          >
-          <a
-            class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300"
-            href="global-presence.html"
-            >Global Presence</a
-          >
-          <a
-            class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300"
-            href="about.html"
-            >About</a
-          >
-          <a
-            class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-primary transition-colors duration-300"
-            href="contact.html"
-            >Contact</a
-          >
-        </div>
-        <button
-          class="bg-on-primary-fixed text-on-tertiary px-6 py-2 font-label-md uppercase transition-all hover:opacity-90 active:scale-95"
-        >
-          Get Started
-        </button>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="Kylaud Global Home">
+        <span class="logo-mark"></span>
+        KYLAUD
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="portifolio.html">Portfolio</a>
+        <a href="global-presence.html">Global Presence</a>
+        <a href="contact.html">Contact</a>
       </nav>
-    </header>
-    <!-- Hero Section -->
-    <section
-      class="relative h-screen flex items-center justify-center overflow-hidden Hero"
-    >
-      <div class="absolute inset-0 z-0">
-        <div
-          class="w-full h-full bg-cover bg-center scale-105 transition-transform duration-1000 hover:scale-100"
-          data-alt="An expansive aerial view of a futuristic global skyline at dusk, with towering skyscrapers illuminating the horizon. The lighting is a sophisticated mix of deep navy blues and brilliant golden windows. The atmosphere is prestigious and high-contrast, reflecting a world-class corporate identity with architectural precision and high-fidelity textures."
-        ></div>
-        <div class="absolute inset-0 bg-on-primary-fixed/60"></div>
-      </div>
-      <div
-        class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl"
-      >
-        <h1
-          class="font-display-lg text-display-lg text-white mb-6 tracking-tight leading-tight"
-        >
-          KYLAUD:
-          <span class="text-secondary-fixed"
-            >BUILDING. CONNECTING. EMPOWERING.</span
-          >
-        </h1>
-        <p
-          class="font-body-lg text-body-lg text-white/90 mb-10 max-w-2xl mx-auto italic"
-        >
-          "businesses that outlive generations"
-        </p>
-        <div class="flex flex-col md:flex-row gap-gutter justify-center">
-          <button
-            class="bg-secondary-container text-on-secondary-fixed px-10 py-4 font-label-md uppercase font-bold hover:bg-secondary-fixed transition-all"
-          >
-            Discover Our Vision
-          </button>
-          <button
-            class="border-2 border-secondary-fixed text-secondary-fixed px-10 py-4 font-label-md uppercase font-bold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-all"
-          >
-            Global Portfolio
-          </button>
+
+      <a href="contact.html" class="btn btn-primary nav-cta">Get Started →</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            Technology <span>/</span> Infrastructure <span>/</span> Finance <span>/</span> Energy
+          </div>
+
+          <h1>
+            Building. Connecting.<br />
+            <span class="highlight">Empowering.</span>
+          </h1>
+
+          <p class="hero-description">
+            Kylaud Global Group manages a diverse ecosystem of high-growth ventures
+            across technology, infrastructure, fintech and sustainable energy —
+            businesses that outlive generations.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#vision" class="btn btn-primary">Discover Our Vision →</a>
+            <a href="portifolio.html" class="btn btn-outline">Global Portfolio ▷</a>
+          </div>
         </div>
-      </div>
-      <div
-        class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/50 animate-bounce"
-      >
-        <span class="material-symbols-outlined text-4xl"
-          >keyboard_double_arrow_down</span
-        >
+
+        <div class="hero-visual" aria-label="Abstract global network illustration">
+          <div class="orbit"></div>
+          <div class="orbit two"></div>
+
+          <div class="globe">
+            <div class="globe-center"></div>
+          </div>
+
+          <div class="floating-tag tag-one">14+ GLOBAL MARKETS</div>
+          <div class="floating-tag tag-two">$2.4B ASSETS MANAGED</div>
+          <div class="floating-tag tag-three">INSTITUTIONAL SCALE</div>
+
+          <div class="visual-note">
+            Businesses that<br />
+            outlive<br />
+            generations.
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Company Overview & Name Meaning (Bento Grid) -->
-    <section
-      class="py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
-    >
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-        <!-- Company Overview -->
-        <div
-          class="md:col-span-7 bg-surface-container-lowest p-12 border border-outline/20 flex flex-col justify-between relative overflow-hidden group"
-        >
-          <div
-            class="absolute top-0 left-0 w-full h-1 bg-on-primary-fixed"
-          ></div>
-          <div>
-            <h2
-              class="font-headline-lg text-headline-lg text-on-primary-fixed mb-6"
-            >
-              Company Overview
-            </h2>
-            <p
-              class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8"
-            >
-              Kylaud Global Group stands as a beacon of institutional
-              excellence, managing a diverse ecosystem of high-growth ventures
-              across technology, infrastructure, and sustainable energy. We
-              bridge the gap between visionary ideas and global market
-              execution, ensuring long-term value for our partners and
-              stakeholders.
-            </p>
-          </div>
-          <div class="flex gap-12">
-            <div>
-              <div class="text-4xl font-bold text-on-primary-fixed">14+</div>
-              <div class="text-label-md uppercase text-outline">
-                Global Markets
-              </div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <div class="section-label">Company Overview</div>
+
+          <h2 class="section-title">
+            An institutional force<br />
+            in global enterprise.
+          </h2>
+
+          <p>
+            Kylaud Global Group stands as a beacon of institutional excellence,
+            managing a diverse ecosystem of high-growth ventures across technology,
+            infrastructure, and sustainable energy.
+          </p>
+
+          <p>
+            We bridge the gap between visionary ideas and global market execution,
+            ensuring long-term value for our partners and stakeholders through
+            disciplined, strategic capital deployment.
+          </p>
+
+          <a href="about.html" class="text-link">Learn more about us →</a>
+        </div>
+
+        <div class="about-image" data-mark="KYLAUD" aria-label="Kylaud brand mark">
+          <div class="about-image-grid"></div>
+
+          <div class="about-points">
+            <div class="point">
+              14+
+              <span>Global Markets</span>
             </div>
-            <div>
-              <div class="text-4xl font-bold text-on-primary-fixed">$2.4B</div>
-              <div class="text-label-md uppercase text-outline">
-                Assets Managed
-              </div>
+
+            <div class="point">
+              $2.4B
+              <span>Assets Managed</span>
+            </div>
+
+            <div class="point">
+              ◎ Global Mindset
+              <span>Strength &amp; Vision</span>
             </div>
           </div>
         </div>
-        <!-- Name Meaning -->
-        <div
-          class="md:col-span-5 navy-bg p-12 flex flex-col justify-center items-center text-center text-white relative"
-        >
-          <div
-            class="absolute top-0 left-0 w-full h-1 bg-secondary-container"
-          ></div>
-          <span
-            class="material-symbols-outlined text-6xl text-secondary-container mb-6"
-            style="font-variation-settings: &quot;FILL&quot; 1"
-            >diamond</span
-          >
-          <h3
-            class="font-headline-md text-headline-md mb-4 text-secondary-container"
-          >
-            The Kylaud Identity
-          </h3>
-          <p
-            class="font-body-md text-body-md opacity-80 leading-relaxed italic"
-          >
-            "Kylaud" symbolizes the convergence of Strength and Vision. Inspired
-            by the resilience of architectural anchors and the clarity of
-            high-altitude perspectives, our name reflects our commitment to
-            building foundations that last for generations while maintaining a
-            panoramic view of future opportunities.
+      </div>
+    </section>
+
+    <!-- REVENUE STRATEGY -->
+    <section class="stats section">
+      <div class="container">
+        <div class="section-heading-row" style="align-items:flex-end;">
+          <div>
+            <div class="section-label" style="color:var(--mint);">Capital Allocation</div>
+            <h2 class="section-title" style="color:white;">Sustainable, Diversified Growth</h2>
+          </div>
+          <p class="section-description" style="color:#bdcadb;">
+            Our capital allocation framework prioritizes "Sustainable Scalability" —
+            a mix of defensive core assets and aggressive growth-stage investments.
           </p>
         </div>
-        <!-- Strategy Snippet (Revenue) -->
-        <div
-          class="md:col-span-12 bg-surface-container p-12 flex flex-col md:flex-row items-center gap-12 border border-outline/10"
-        >
-          <div class="flex-1">
-            <h3
-              class="font-headline-md text-headline-md text-on-primary-fixed mb-4"
-            >
-              Revenue Strategy
-            </h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">
-              Our capital allocation framework prioritizes "Sustainable
-              Scalability." We leverage a mix of defensive core assets and
-              aggressive growth-stage investments to ensure a balanced,
-              high-yield revenue stream that withstands market volatility.
+
+        <div class="stats-grid">
+          <div>
+            <div class="stat-number">42%</div>
+            <div class="stat-label">Infrastructure</div>
+          </div>
+          <div>
+            <div class="stat-number">28%</div>
+            <div class="stat-label">FinTech</div>
+          </div>
+          <div>
+            <div class="stat-number">18%</div>
+            <div class="stat-label">Energy</div>
+          </div>
+          <div>
+            <div class="stat-number">12%</div>
+            <div class="stat-label">Emerging</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <div class="section-label">What We Do</div>
+            <h2 class="section-title">
+              Connected infrastructure.<br />
+              Global impact.
+            </h2>
+          </div>
+
+          <p class="section-description">
+            We focus on transforming industries through the areas where technology,
+            capital, and sustainable infrastructure create lasting value.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-icon">▦</div>
+            <div class="service-number">01.</div>
+            <h3>Network Integration</h3>
+            <p>Advanced digital backbones connecting major financial hubs across three continents.</p>
+            <div class="service-arrow">→</div>
+          </article>
+
+          <article class="service-card violet">
+            <div class="service-icon">▤</div>
+            <div class="service-number">02.</div>
+            <h3>FinTech &amp; Capital</h3>
+            <p>Institutional investment strategies and technology-led financial infrastructure.</p>
+            <div class="service-arrow">→</div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">⚡</div>
+            <div class="service-number">03.</div>
+            <h3>Sustainable Power</h3>
+            <p>Pioneering clean energy solutions that fuel industrial parks and smart cities.</p>
+            <div class="service-arrow">→</div>
+          </article>
+
+          <article class="service-card violet">
+            <div class="service-icon">♧</div>
+            <div class="service-number">04.</div>
+            <h3>Global Compliance</h3>
+            <p>Unmatched security protocols meeting the highest international regulatory standards.</p>
+            <div class="service-arrow">→</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ECOSYSTEM -->
+    <section class="section ecosystem">
+      <div class="container">
+        <div class="ecosystem-panel">
+          <div>
+            <div class="section-label">The Kylaud Ecosystem</div>
+
+            <h2>One vision.<br />Multiple ventures.</h2>
+
+            <p>
+              "Kylaud" symbolizes the convergence of strength and vision — a name that
+              reflects our commitment to building foundations that last for generations
+              while maintaining a panoramic view of future opportunities.
             </p>
-            <a
-              class="text-on-primary-fixed font-bold border-b-2 border-secondary-container pb-1 hover:text-secondary transition-colors"
-              href="portifolio.html"
-              >Review Financial Summary</a
-            >
+
+            <a href="portifolio.html" class="btn btn-outline on-dark">Explore Our Portfolio →</a>
           </div>
-          <div class="w-full md:w-1/3 grid grid-cols-2 gap-4">
-            <div class="bg-white p-6 border border-outline/10 text-center">
-              <div class="text-secondary font-bold text-xl">42%</div>
-              <div class="text-[10px] uppercase tracking-widest text-outline">
-                Infrastructure
-              </div>
-            </div>
-            <div class="bg-white p-6 border border-outline/10 text-center">
-              <div class="text-secondary font-bold text-xl">28%</div>
-              <div class="text-[10px] uppercase tracking-widest text-outline">
-                FinTech
-              </div>
-            </div>
-            <div class="bg-white p-6 border border-outline/10 text-center">
-              <div class="text-secondary font-bold text-xl">18%</div>
-              <div class="text-[10px] uppercase tracking-widest text-outline">
-                Energy
-              </div>
-            </div>
-            <div class="bg-white p-6 border border-outline/10 text-center">
-              <div class="text-secondary font-bold text-xl">12%</div>
-              <div class="text-[10px] uppercase tracking-widest text-outline">
-                Emerging
-              </div>
-            </div>
+
+          <div class="ecosystem-visual">
+            <div class="ecosystem-ring"></div>
+
+            <div class="ecosystem-core"><strong>KYLAUD</strong></div>
+
+            <div class="ecosystem-node"><div><span>▦</span>Technology</div></div>
+            <div class="ecosystem-node"><div><span>▤</span>FinTech</div></div>
+            <div class="ecosystem-node"><div><span>⚡</span>Energy</div></div>
+            <div class="ecosystem-node"><div><span>♧</span>Consulting</div></div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Global Infrastructure Visualization -->
-    <section
-      class="bg-on-primary-fixed py-section-padding text-white relative overflow-hidden"
-    >
-      <div
-        class="max-w-container-max mx-auto px-margin-desktop grid md:grid-cols-2 items-center gap-16"
-      >
+
+    <!-- APPROACH -->
+    <section class="section approach">
+      <div class="container approach-grid">
+
         <div>
-          <h2 class="font-headline-lg text-headline-lg mb-8 leading-tight">
-            Transforming Industries via
-            <span class="text-secondary-fixed">Connected Infrastructure</span>
+          <div class="section-label">Our Approach</div>
+
+          <h2 class="section-title">
+            Built for<br />
+            the long term.
           </h2>
-          <div class="space-y-8">
-            <div class="flex gap-6">
-              <div
-                class="h-12 w-12 rounded-sm border border-secondary-fixed flex items-center justify-center shrink-0"
-              >
-                <span class="material-symbols-outlined text-secondary-fixed"
-                  >hub</span
-                >
-              </div>
-              <div>
-                <h4 class="font-headline-md text-lg mb-2">
-                  Network Integration
-                </h4>
-                <p class="text-white/60 text-body-md">
-                  Advanced digital backbones connecting major financial hubs
-                  across three continents.
-                </p>
-              </div>
-            </div>
-            <div class="flex gap-6">
-              <div
-                class="h-12 w-12 rounded-sm border border-secondary-fixed flex items-center justify-center shrink-0"
-              >
-                <span class="material-symbols-outlined text-secondary-fixed"
-                  >bolt</span
-                >
-              </div>
-              <div>
-                <h4 class="font-headline-md text-lg mb-2">Sustainable Power</h4>
-                <p class="text-white/60 text-body-md">
-                  Pioneering clean energy solutions that fuel industrial parks
-                  and smart cities.
-                </p>
-              </div>
-            </div>
-            <div class="flex gap-6">
-              <div
-                class="h-12 w-12 rounded-sm border border-secondary-fixed flex items-center justify-center shrink-0"
-              >
-                <span class="material-symbols-outlined text-secondary-fixed"
-                  >security</span
-                >
-              </div>
-              <div>
-                <h4 class="font-headline-md text-lg mb-2">Global Compliance</h4>
-                <p class="text-white/60 text-body-md">
-                  Unmatched security protocols meeting the highest international
-                  regulatory standards.
-                </p>
-              </div>
+
+          <p class="section-description">
+            We pursue ideas with a focus on innovation, integrity, and the creation
+            of long-term business value across every market we enter.
+          </p>
+        </div>
+
+        <div class="principles">
+
+          <div class="principle">
+            <div class="principle-icon">✓</div>
+            <div>
+              <h3>Integrity</h3>
+              <p>Unwavering commitment to ethical standards and transparency in every transaction.</p>
             </div>
           </div>
-        </div>
-        <div class="relative group">
-          <div
-            class="absolute -inset-4 border-2 border-secondary-fixed/20 group-hover:border-secondary-fixed/50 transition-all duration-500"
-          ></div>
-          <div
-            class="aspect-square bg-cover bg-center shadow-2xl relative z-10"
-            data-alt="A cinematic, high-fidelity close-up of a modern server room with glowing blue lights and golden fiber optic cables. The image captures the essence of advanced technology and secure infrastructure, with sharp focus and clean architectural lines. The color palette is dominated by deep navy and warm amber glows, creating a sophisticated corporate atmosphere."
-            style="
-              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuArMsdNEdGqPRkjC_nWb6vpFFHKFN2KYYoeDgfYDPg83S7vED0CAUqjASoLpCUurr5zoZzO0Dwe54fqcsSg_25J8JjyrAi9_DbHMHs5KE0jlFRBchdQgfJh0IPfu7mj440OoNQ31PhBAvcx7sV5PKVehvFTIxIhLsW4xGdGrBv_t5YnDZcJvvei8R7oVPyEvhWPwy1KY50_zsgPM9ZxTXmiuXTCOLqywnOO3bijzxIAiAUv2s5hnylsZQFqSxK6WgFNaZ-c4Zaij7w&quot;);
-            "
-          ></div>
+
+          <div class="principle">
+            <div class="principle-icon">💡</div>
+            <div>
+              <h3>Innovation</h3>
+              <p>Embracing cutting-edge technology and creative strategies to solve global challenges.</p>
+            </div>
+          </div>
+
+          <div class="principle">
+            <div class="principle-icon">↗</div>
+            <div>
+              <h3>Long-term Value</h3>
+              <p>Disciplined, strategic capital deployment that builds businesses meant to last.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-    <!-- Footer -->
-    <footer class="bg-on-primary-fixed border-t border-white/10">
-      <div
-        class="flex flex-col md:flex-row justify-between items-start gap-gutter py-section-padding px-margin-desktop max-w-container-max mx-auto"
-      >
-        <div class="md:w-1/3">
-          <div
-            class="font-headline-md text-headline-md font-bold text-on-tertiary mb-6"
-          >
-            KYLAUD GLOBAL
+
+    <!-- VISION -->
+    <section class="section vision" id="vision">
+      <div class="container">
+        <div class="vision-inner">
+          <div class="section-label">Our Vision</div>
+
+          <h2>The future is not something we wait for. It is something we build.</h2>
+
+          <p>
+            To be a globally respected group shaping the future through innovation —
+            a beacon of progress across 14+ global markets and every industry we touch.
+          </p>
+
+          <div class="vision-actions">
+            <a href="contact.html" class="btn btn-primary">Partner With Us →</a>
+            <a href="global-presence.html" class="btn btn-outline on-dark">Global Presence ▷</a>
           </div>
-          <p class="text-on-tertiary-container font-body-md mb-8">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark"></span>
+            KYLAUD
+          </a>
+          <p class="footer-description">
             Empowering global enterprise through visionary leadership and
             institutional-grade resource management.
           </p>
-          <div class="flex gap-4">
-            <a
-              class="h-10 w-10 border border-white/20 flex items-center justify-center text-white hover:border-secondary-fixed hover:text-secondary-fixed transition-all"
-              href="#"
-              ><span class="material-symbols-outlined">public</span></a
-            >
-            <a
-              class="h-10 w-10 border border-white/20 flex items-center justify-center text-white hover:border-secondary-fixed hover:text-secondary-fixed transition-all"
-              href="#"
-              ><span class="material-symbols-outlined">groups</span></a
-            >
-            <a
-              class="h-10 w-10 border border-white/20 flex items-center justify-center text-white hover:border-secondary-fixed hover:text-secondary-fixed transition-all"
-              href="#"
-              ><span class="material-symbols-outlined">description</span></a
-            >
-          </div>
         </div>
-        <div class="grid grid-cols-2 gap-16">
-          <div>
-            <h5 class="text-white font-label-md uppercase mb-6 tracking-widest">
-              Navigation
-            </h5>
-            <ul class="space-y-4 text-on-tertiary-container">
-              <li>
-                <a class="hover:text-secondary-fixed transition-all" href="#"
-                  >Investment Portal</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-secondary-fixed transition-all" href="#"
-                  >Market Intelligence</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-secondary-fixed transition-all" href="#"
-                  >Global Offices</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-secondary-fixed transition-all" href="#"
-                  >Careers</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h5 class="text-white font-label-md uppercase mb-6 tracking-widest">
-              Compliance
-            </h5>
-            <ul class="space-y-4 text-on-tertiary-container">
-              <li>
-                <a class="hover:text-secondary-fixed transition-all" href="#"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-secondary-fixed transition-all" href="#"
-                  >Terms of Service</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-secondary-fixed transition-all" href="#"
-                  >Global Compliance</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-secondary-fixed transition-all" href="#"
-                  >ESG Report</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-white/5 py-8 text-center px-margin-mobile">
-        <p class="text-on-tertiary-container font-body-md">
-          © 2024 Kylaud Global Group. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <script>
-      // Simple scroll reveal interaction
-      window.addEventListener("scroll", () => {
-        const nav = document.querySelector("header");
-        if (window.scrollY > 100) {
-          nav.classList.add("shadow-lg");
-        } else {
-          nav.classList.remove("shadow-lg");
-        }
-      });
 
-      // Interactive hover states for grid cards
-      document.querySelectorAll(".group").forEach((card) => {
-        card.addEventListener("mouseenter", () => {
-          card.style.transform = "translateY(-4px)";
-          card.style.transition = "transform 0.3s ease";
-        });
-        card.addEventListener("mouseleave", () => {
-          card.style.transform = "translateY(0)";
-        });
-      });
-    </script>
-  </body>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portifolio.html">Portfolio</a>
+            <a href="global-presence.html">Global Presence</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="contact.html">Contact</a>
+            <a href="about.html">Our Vision</a>
+            <a href="https://calendly.com/bonkajozefin/30min" target="_blank" rel="noopener">Schedule a Meeting</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Connect</h4>
+          <div class="footer-links">
+            <a href="mailto:info@kylaud.com">Email Us</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Kylaud Global Group. All rights reserved.</p>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="X">𝕏</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
 </html>
