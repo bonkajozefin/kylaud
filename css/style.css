@@ -1972,3 +1972,7 @@ a.service-card { color: inherit; }
 }
 
 .faq details[open] summary::after { transform: rotate(180deg); }
+
+.form-status { font-size: 13px; font-weight: 600; }
+.form-status.show { display: block; }
+.form-status.error { color: #c0392b; }

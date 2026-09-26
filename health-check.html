@@ -141,6 +141,7 @@
 
         <form class="contact-form" id="healthForm" action="https://formspree.io/f/mykrvdzw" method="POST">
           <input type="hidden" name="_subject" value="Data Health Check request" />
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
           <div class="form-grid">
 
             <div class="form-group">
@@ -183,6 +184,7 @@
 
           <button type="submit" class="btn btn-dark form-submit">Request a Health Check <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
           <p class="notice">We reply within one business day.</p>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
