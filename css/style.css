@@ -1117,3 +1117,14 @@ img {
   .form-group.full { grid-column: auto; }
   .contact-form { padding: 22px; }
 }
+
+.service-card .card-img {
+  width: calc(100% + 44px);
+  max-width: none;
+  margin: -26px -22px 20px;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  background: var(--white);
+}
