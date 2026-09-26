@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kylaud Global Group — an institutional business group building technology, infrastructure, fintech and energy ventures across the world." />
-  <title>Kylaud Global Group | Building. Connecting. Empowering.</title>
+  <meta name="description" content="Kylaud Technologies builds data platforms, live dashboards and AI tools for financial institutions, businesses and NGOs, starting in Uganda." />
+  <title>Kylaud Technologies | Data & AI for finance, business and NGOs</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,386 +14,291 @@
 
 <body>
 
-  <!-- NAVIGATION -->
   <header class="navbar">
     <div class="container nav-inner">
-      <a href="index.html" class="logo" aria-label="Kylaud Global Home">
+      <a href="index.html" class="logo" aria-label="Kylaud Technologies home">
         <span class="logo-mark"></span>
         KYLAUD
       </a>
 
       <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <div class="nav-dropdown">
+          <span class="nav-drop-label" tabindex="0" aria-haspopup="true">Solutions <svg class="chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+          <div class="nav-dropdown-menu">
+            <a href="finance.html">Financial Institutions</a>
+            <a href="businesses.html">Businesses</a>
+            <a href="ngos.html">NGOs</a>
+          </div>
+        </div>
+        <a href="work.html">Work</a>
         <a href="about.html">About</a>
-        <a href="portifolio.html">Portfolio</a>
-        <a href="global-presence.html">Global Presence</a>
-        <a href="contact.html">Contact</a>
+        <a href="insights.html">Insights</a>
+        <a href="health-check.html" class="btn btn-primary nav-cta-mobile">Book a Health Check</a>
       </nav>
 
-      <a href="contact.html" class="btn btn-primary nav-cta">Get Started →</a>
+      <a href="health-check.html" class="btn btn-primary nav-cta">Book a Health Check <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg class="icon ic-open" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon ic-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
     </div>
   </header>
 
   <main>
 
-    <!-- HERO -->
     <section class="hero" id="home">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <div class="eyebrow">
-            Technology <span>/</span> Infrastructure <span>/</span> Finance <span>/</span> Energy
-          </div>
+          <div class="eyebrow">Kylaud Technologies <span>/</span> Data &amp; AI</div>
 
           <h1>
-            Building. Connecting.<br />
-            <span class="highlight">Empowering.</span>
+            Turn your data into
+            <span class="highlight">decisions and automation.</span>
           </h1>
 
           <p class="hero-description">
-            Kylaud Global Group manages a diverse ecosystem of high-growth ventures
-            across technology, infrastructure, fintech and sustainable energy —
-            businesses that outlive generations.
+            Kylaud Technologies builds data platforms, live dashboards and AI tools for
+            financial institutions, businesses and NGOs, so you always know where your
+            money is and what your numbers mean.
           </p>
 
           <div class="hero-actions">
-            <a href="#vision" class="btn btn-primary">Discover Our Vision →</a>
-            <a href="portifolio.html" class="btn btn-outline">Global Portfolio ▷</a>
+            <a href="health-check.html" class="btn btn-primary">Book a free Data Health Check <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="work.html#demos" class="btn btn-outline">Watch the 3-minute demo <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Abstract global network illustration">
-          <div class="orbit"></div>
-          <div class="orbit two"></div>
-
-          <div class="globe">
-            <div class="globe-center"></div>
+        <div class="dash-wrap">
+          <div class="dash" role="img" aria-label="Illustrative portfolio dashboard built with synthetic data">
+            <div class="dash-top"><span></span><span></span><span></span><em>Portfolio overview</em></div>
+            <div class="dash-kpis">
+              <div><small>Portfolio at risk</small><strong>4.2%</strong><i class="up">Falling</i></div>
+              <div><small>Repayment rate</small><strong>96.1%</strong><i class="up">On track</i></div>
+              <div><small>Loans flagged</small><strong>12</strong><i class="down">This week</i></div>
+            </div>
+            <div class="dash-chart">
+              <b style="height:38%"></b><b style="height:52%"></b><b class="alt" style="height:44%"></b><b style="height:64%"></b><b style="height:58%"></b><b class="alt" style="height:78%"></b><b style="height:70%"></b><b style="height:88%"></b>
+            </div>
+            <ul class="dash-alerts">
+              <li><span class="dot warn"></span>Branch C: 3 loans likely to fall into arrears</li>
+              <li><span class="dot"></span>Board report generated automatically</li>
+            </ul>
           </div>
-
-          <div class="floating-tag tag-one">14+ GLOBAL MARKETS*</div>
-          <div class="floating-tag tag-two">$2.4B ASSETS MANAGED*</div>
-          <div class="floating-tag tag-three">INSTITUTIONAL SCALE</div>
-
-          <div class="visual-note">
-            Businesses that<br />
-            outlive<br />
-            generations.<br />
-            <span style="opacity:.7; font-size:9px;">*Projected figures</span>
-          </div>
+          <div class="dash-caption">Illustrative example &middot; synthetic data</div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section about" id="about">
-      <div class="container about-grid">
-        <div class="about-copy">
-          <div class="section-label">Company Overview</div>
-
-          <h2 class="section-title">
-            An institutional force<br />
-            in global enterprise.
-          </h2>
-
-          <p>
-            Kylaud Global Group stands as a beacon of institutional excellence,
-            managing a diverse ecosystem of high-growth ventures across technology,
-            infrastructure, and sustainable energy.
-          </p>
-
-          <p>
-            We bridge the gap between visionary ideas and global market execution,
-            ensuring long-term value for our partners and stakeholders through
-            disciplined, strategic capital deployment.
-          </p>
-
-          <a href="about.html" class="text-link">Learn more about us →</a>
-        </div>
-
-        <div class="about-image" data-mark="KYLAUD" aria-label="Kylaud brand mark">
-          <div class="about-image-grid"></div>
-          <span class="card-note">Figures projected</span>
-
-          <div class="about-points">
-            <div class="point">
-              14+
-              <span>Global Markets (Projected)</span>
-            </div>
-
-            <div class="point">
-              $2.4B
-              <span>Assets Managed (Projected)</span>
-            </div>
-
-            <div class="point">
-              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 6 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-6-3.5-9s1-6.5 3.5-9Z"/></svg>
-              Global Mindset
-              <span>Strength &amp; Vision</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVENUE STRATEGY -->
-    <section class="stats section">
+    <section class="section">
       <div class="container">
-        <div class="section-heading-row" style="align-items:flex-end;">
+        <div class="section-heading-row" style="">
           <div>
-            <div class="section-label" style="color:var(--mint);">Capital Allocation</div>
-            <h2 class="section-title" style="color:white;">Sustainable, Diversified Growth</h2>
+            <div class="section-label">The problem</div>
+            <h2 class="section-title">Sound familiar?</h2>
           </div>
-          <p class="section-description" style="color:#bdcadb;">
-            Our capital allocation framework prioritizes "Sustainable Scalability" —
-            a mix of defensive core assets and aggressive growth-stage investments.
-          </p>
+          <p class="section-description">Most organizations we speak to are dealing with the same three things.</p>
         </div>
-
-        <div class="stats-grid">
-          <div>
-            <div class="stat-number">42%</div>
-            <div class="stat-label">Infrastructure</div>
-          </div>
-          <div>
-            <div class="stat-number">28%</div>
-            <div class="stat-label">FinTech</div>
-          </div>
-          <div>
-            <div class="stat-number">18%</div>
-            <div class="stat-label">Energy</div>
-          </div>
-          <div>
-            <div class="stat-number">12%</div>
-            <div class="stat-label">Emerging</div>
-          </div>
+        <div class="services-grid cols-3">
+          <article class="service-card compact">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg></div>
+            <h3>Data everywhere, answers nowhere</h3>
+            <p>Your information sits in survey tools, spreadsheets and systems that don't talk to each other.</p>
+          </article>
+          <article class="service-card violet compact">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+            <h3>Reporting eats your weeks</h3>
+            <p>Your team spends days every quarter copying numbers into donor or regulatory templates.</p>
+          </article>
+          <article class="service-card compact">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></svg></div>
+            <h3>AI feels out of reach</h3>
+            <p>You know it could help, but your data isn't ready and you don't know where to start.</p>
+          </article>
         </div>
-
-        <p class="stats-note">*Allocation figures are current projections, not audited results.</p>
       </div>
     </section>
 
-    <!-- SERVICES -->
     <section class="section services">
       <div class="container">
-        <div class="section-heading-row">
+        <div class="section-heading-row" style="">
           <div>
-            <div class="section-label">What We Do</div>
-            <h2 class="section-title">
-              Connected infrastructure.<br />
-              Global impact.
-            </h2>
+            <div class="section-label">What we do</div>
+            <h2 class="section-title">Three services, in the order you need them.</h2>
           </div>
-
-          <p class="section-description">
-            We focus on transforming industries through the areas where technology,
-            capital, and sustainable infrastructure create lasting value.
-          </p>
+          <p class="section-description">Foundations first, then insight, then AI. You can start at any stage.</p>
         </div>
-
-        <div class="services-grid">
-
-          <article class="service-card">
-            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"/><circle cx="4" cy="6" r="1.8"/><circle cx="20" cy="6" r="1.8"/><circle cx="4" cy="18" r="1.8"/><circle cx="20" cy="18" r="1.8"/><path d="M9.8 10.3 5.5 7.3M14.2 10.3 18.5 7.3M9.8 13.7 5.5 16.7M14.2 13.7 18.5 16.7"/></svg></div>
-            <div class="service-number">01.</div>
-            <h3>Network Integration</h3>
-            <p>Advanced digital backbones connecting major financial hubs across three continents.</p>
-            <div class="service-arrow">→</div>
-          </article>
-
-          <article class="service-card violet">
-            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M3 10 12 4l9 6"/><path d="M4 10v9M9 10v9M15 10v9M20 10v9"/><path d="M2.5 21h19"/></svg></div>
-            <div class="service-number">02.</div>
-            <h3>FinTech &amp; Capital</h3>
-            <p>Institutional investment strategies and technology-led financial infrastructure.</p>
-            <div class="service-arrow">→</div>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M13 3 5 14h6l-1 7 8-11h-6l1-7Z"/></svg></div>
-            <div class="service-number">03.</div>
-            <h3>Sustainable Power</h3>
-            <p>Pioneering clean energy solutions that fuel industrial parks and smart cities.</p>
-            <div class="service-arrow">→</div>
-          </article>
-
-          <article class="service-card violet">
-            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3 4.5 6v6c0 5 3.5 8 7.5 9 4-1 7.5-4 7.5-9V6L12 3Z"/><path d="m8.5 12.5 2.3 2.3 4.7-4.8"/></svg></div>
-            <div class="service-number">04.</div>
-            <h3>Global Compliance</h3>
-            <p>Unmatched security protocols meeting the highest international regulatory standards.</p>
-            <div class="service-arrow">→</div>
-          </article>
-
+        <div class="services-grid cols-3">
+          <a class="service-card compact" href="services.html#foundations">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+            <h3>Data Foundations</h3>
+            <p>We connect your systems into one clean, reliable source of truth.</p>
+            <div class="card-link">See the service &rarr;</div>
+          </a>
+          <a class="service-card violet compact" href="services.html#analytics">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21h18"/><rect x="5" y="11" width="3" height="8"/><rect x="10.5" y="5" width="3" height="14"/><rect x="16" y="14" width="3" height="5"/></svg></div>
+            <h3>Analytics &amp; Dashboards</h3>
+            <p>Live dashboards that show leadership what's happening, when it's happening.</p>
+            <div class="card-link">See the service &rarr;</div>
+          </a>
+          <a class="service-card compact" href="services.html#ai">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></svg></div>
+            <h3>Applied AI</h3>
+            <p>Assistants, document automation and forecasting built on your own data.</p>
+            <div class="card-link">See the service &rarr;</div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ECOSYSTEM -->
-    <section class="section ecosystem">
+    <section class="section">
       <div class="container">
-        <div class="ecosystem-panel">
+        <div class="section-heading-row" style="">
           <div>
-            <div class="section-label">The Kylaud Ecosystem</div>
-
-            <h2>One vision.<br />Multiple ventures.</h2>
-
-            <p>
-              "Kylaud" symbolizes the convergence of strength and vision — a name that
-              reflects our commitment to building foundations that last for generations
-              while maintaining a panoramic view of future opportunities.
-            </p>
-
-            <a href="portifolio.html" class="btn btn-outline on-dark">Explore Our Portfolio →</a>
+            <div class="section-label">Who we work with</div>
+            <h2 class="section-title">Built for organizations that answer for their numbers.</h2>
           </div>
-
-          <div class="ecosystem-visual">
-            <div class="ecosystem-ring"></div>
-
-            <div class="ecosystem-core"><strong>KYLAUD</strong></div>
-
-            <div class="ecosystem-node"><div><svg class="icon" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M9.5 7V3.5M14.5 7V3.5M9.5 21v-3.5M14.5 21v-3.5M7 9.5H3.5M7 14.5H3.5M21 9.5h-3.5M21 14.5h-3.5"/></svg>Technology</div></div>
-            <div class="ecosystem-node"><div><svg class="icon" viewBox="0 0 24 24"><path d="M3 10 12 4l9 6"/><path d="M4 10v9M9 10v9M15 10v9M20 10v9"/><path d="M2.5 21h19"/></svg>FinTech</div></div>
-            <div class="ecosystem-node"><div><svg class="icon" viewBox="0 0 24 24"><path d="M13 3 5 14h6l-1 7 8-11h-6l1-7Z"/></svg>Energy</div></div>
-            <div class="ecosystem-node"><div><svg class="icon" viewBox="0 0 24 24"><path d="M9.5 14.5 14.5 9.5"/><path d="M8 16 5.5 18.5a3 3 0 0 1-4.2-4.2L4 11.6M16 8l2.5-2.5a3 3 0 1 1 4.2 4.2L20 12.3"/></svg>Consulting</div></div>
-          </div>
+          
+        </div>
+        <div class="services-grid cols-3">
+          <a class="service-card compact" href="finance.html">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M3 10 12 4l9 6"/><path d="M4 10v9M9 10v9M15 10v9M20 10v9"/><path d="M2.5 21h19"/></svg></div>
+            <h3>Financial institutions</h3>
+            <p>Portfolio dashboards, early-warning alerts for loans at risk, and automated regulatory and board reporting for banks, MFIs, SACCOs and SACCO unions.</p>
+            <div class="card-link">Solutions for Finance &rarr;</div>
+          </a>
+          <a class="service-card violet compact" href="businesses.html">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 6 0 2.5 2.5 0 0 0 5 0"/><path d="M5 12v8h14v-8M10 20v-5h4v5"/></svg></div>
+            <h3>Businesses</h3>
+            <p>EFRIS integration, plus live sales, stock and profit dashboards that catch leakage early.</p>
+            <div class="card-link">Solutions for Businesses &rarr;</div>
+          </a>
+          <a class="service-card compact" href="ngos.html">
+            <div class="service-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></div>
+            <h3>NGOs &amp; development organizations</h3>
+            <p>Automated M&amp;E data flows, indicator dashboards and donor-ready reports.</p>
+            <div class="card-link">Solutions for NGOs &rarr;</div>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- APPROACH -->
-    <section class="section approach">
-      <div class="container approach-grid">
-
-        <div>
-          <div class="section-label">Our Approach</div>
-
-          <h2 class="section-title">
-            Built for<br />
-            the long term.
-          </h2>
-
-          <p class="section-description">
-            We pursue ideas with a focus on innovation, integrity, and the creation
-            of long-term business value across every market we enter.
-          </p>
+    <section class="section services">
+      <div class="container">
+        <div class="section-heading-row" style="">
+          <div>
+            <div class="section-label">How we work</div>
+            <h2 class="section-title">Four steps, from review to running system.</h2>
+          </div>
+          
         </div>
-
-        <div class="principles">
-
-          <div class="principle">
-            <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5 5.5-6"/></svg></div>
-            <div>
-              <h3>Integrity</h3>
-              <p>Unwavering commitment to ethical standards and transparency in every transaction.</p>
-            </div>
-          </div>
-
-          <div class="principle">
-            <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></svg></div>
-            <div>
-              <h3>Innovation</h3>
-              <p>Embracing cutting-edge technology and creative strategies to solve global challenges.</p>
-            </div>
-          </div>
-
-          <div class="principle">
-            <div class="principle-icon"><svg class="icon" viewBox="0 0 24 24"><path d="m3 16 6-6 4 4 8-9"/><path d="M15 5h6v6"/></svg></div>
-            <div>
-              <h3>Long-term Value</h3>
-              <p>Disciplined, strategic capital deployment that builds businesses meant to last.</p>
-            </div>
-          </div>
-
+        <div class="steps">
+          <div class="step"><div class="step-number">1</div><h3>Health Check</h3><p>A 1&ndash;2 week review of your data, systems and reporting.</p></div>
+          <div class="step"><div class="step-number">2</div><h3>Roadmap</h3><p>A clear plan with costs, timelines and quick wins.</p></div>
+          <div class="step"><div class="step-number">3</div><h3>Build</h3><p>We design and deliver your data platform, dashboards or AI tools.</p></div>
+          <div class="step"><div class="step-number">4</div><h3>Support</h3><p>We run, monitor and improve your systems every month.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- VISION -->
-    <section class="section vision" id="vision">
+    <section class="section">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <div class="section-label">See it working</div>
+          <h2 class="section-title">A lender's loan data, live.</h2>
+          <p>See how a lender's loan data flows automatically into a live portfolio dashboard with early-warning alerts.</p>
+          <a href="work.html#demos" class="text-link">See our demos <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="video-slot"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 5 3.5-5 3.5Z"/></svg><strong>3-minute demo coming soon</strong><span>Loan data flowing into a live portfolio dashboard.</span></div>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="container">
+        <div class="section-label">Why Kylaud</div>
+        <p class="founder">
+          Kylaud is led by a software engineer and data architect with NGO-sector experience,
+          working alongside finance specialists. We combine engineering depth with a practical
+          understanding of how lenders, businesses and programs actually run.
+        </p>
+      </div>
+    </section>
+
+    <section class="section vision">
       <div class="container">
         <div class="vision-inner">
-          <div class="section-label">Our Vision</div>
-
-          <h2>The future is not something we wait for. It is something we build.</h2>
-
-          <p>
-            To be a globally respected group shaping the future through innovation —
-            a beacon of progress across a projected 14+ global markets and every industry we touch.
-          </p>
-
-          <div class="vision-actions">
-            <a href="contact.html" class="btn btn-primary">Partner With Us →</a>
-            <a href="global-presence.html" class="btn btn-outline on-dark">Global Presence ▷</a>
-          </div>
+          <div class="section-label">Next step</div>
+          <h2>Find out what your data could be doing for you.</h2>
+          <p>Our Data Health Check shows you where time is being lost, what's at risk, and what to fix first.</p>
+          <div class="vision-actions"><a href="health-check.html" class="btn btn-primary">Book your Data Health Check <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
+    <div class="roadmap-strip">
+      <div class="container">
+        <p>Kylaud Technologies is the first operating division of Kylaud &amp; BJ Group Limited. Future divisions in energy, property and investment will build on the same data-driven foundation.</p>
+        <a href="about.html#roadmap" class="text-link">Learn about the Group <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
   <footer class="footer">
     <div class="container">
 
       <div class="footer-grid">
-
         <div class="footer-brand">
           <a href="index.html" class="logo">
             <span class="logo-mark"></span>
             KYLAUD
           </a>
           <p class="footer-description">
-            Empowering global enterprise through visionary leadership and
-            institutional-grade resource management.
+            Data you can trust. Decisions you can defend.
           </p>
+          <p class="footer-legal">Kylaud Technologies is a division of Kylaud &amp; BJ Group Limited.</p>
         </div>
 
         <div>
           <h4>Explore</h4>
           <div class="footer-links">
-            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="work.html">Work &amp; Demos</a>
             <a href="about.html">About</a>
-            <a href="portifolio.html">Portfolio</a>
-            <a href="global-presence.html">Global Presence</a>
+            <a href="insights.html">Insights</a>
           </div>
         </div>
 
         <div>
-          <h4>Company</h4>
+          <h4>Solutions</h4>
           <div class="footer-links">
-            <a href="contact.html">Contact</a>
-            <a href="about.html">Our Vision</a>
-            <a href="https://calendly.com/bonkajozefin/30min" target="_blank" rel="noopener">Schedule a Meeting</a>
+            <a href="finance.html">Financial Institutions</a>
+            <a href="businesses.html">Businesses</a>
+            <a href="ngos.html">NGOs</a>
+            <a href="health-check.html">Data Health Check</a>
           </div>
         </div>
 
         <div>
           <h4>Connect</h4>
           <div class="footer-links">
-            <a href="mailto:info@kylaud.com">Email Us</a>
+            <a href="mailto:info@kylaud.com">info@kylaud.com</a>
+            <a href="contact.html">Contact</a>
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
-
       </div>
 
       <div class="footer-bottom">
-        <p>© <span id="year"></span> Kylaud Global Group. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Kylaud &amp; BJ Group Limited. All rights reserved.</p>
 
         <div class="footer-socials">
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.6v.1M11.5 16.5v-4c0-1.4 1-2.3 2.2-2.3 1.3 0 2.3.9 2.3 2.3v4"/></svg>
           </a>
-          <a href="#" aria-label="X">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube">
-            <svg class="icon" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="3"/><path d="m10.5 9 5 3-5 3Z" fill="currentColor" stroke="none"/></svg>
-          </a>
         </div>
       </div>
-
     </div>
   </footer>
 
